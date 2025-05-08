@@ -1,12 +1,104 @@
-# React + Vite
+# 📧 Appwrite Email OTP - Sample App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React** demo application that demonstrates how to implement **Email OTP (One-Time Password)** authentication using **[Appwrite](https://appwrite.io)**.
 
-Currently, two official plugins are available:
+> 🔐 A simple and modern approach to secure user authentication using Appwrite and React with Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Email OTP-based user authentication
+- Secure session handling
+- React components with Tailwind CSS styling
+- Easy Appwrite integration
+- Developer-friendly and extendable
+
+---
+
+## 🛠️ Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Appwrite](https://appwrite.io/)
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/PramodTejra/SignUp-Otp.git
+cd SignUp-Otp
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### 3. Set Up Environment Variables
+
+Rename `.env.example` to `.env` and configure your Appwrite credentials:
+
+```env
+VITE_APPWRITE_ENDPOINT=https://your-appwrite-endpoint/v1
+VITE_APPWRITE_PROJECT_ID=your-project-id
+```
+
+> ✅ Ensure that you’ve created a project in Appwrite and enabled Email OTP authentication.
+
+### 4. Run the Development Server
+
+```bash
+npm run dev
+```
+
+Open your browser at [http://localhost:5173](http://localhost:5173) to view the app.
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/        # Reusable React components
+├── pages/             # Route components (Signup, OTP, Success, etc.)
+├── appwrite/          # Appwrite client config and helpers
+├── App.jsx            # Main App component
+├── main.jsx           # App entry point
+├── index.css          # Tailwind CSS import
+.env                   # Environment variables
+tailwind.config.js     # Tailwind configuration
+vite.config.js         # Vite configuration
+```
+
+---
+
+## 📸 Screenshots
+
+*(Optional: Add screenshots of the Signup page, OTP verification, and success messages here)*
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/YourFeature`
+3. Commit your changes: `git commit -m 'Add your feature'`
+4. Push to the branch: `git push origin feature/YourFeature`
+5. Open a pull request
+
+## 📬 Contact
+
+Created by [@PramodTejra](https://github.com/PramodTejra) – feel free to reach out!
+
